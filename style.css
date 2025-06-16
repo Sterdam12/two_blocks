@@ -18,6 +18,7 @@ body {
 
 a {
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 button {
@@ -26,27 +27,41 @@ button {
     background: none;
 }
 
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
 header {
     width: 100%;
     border-bottom: 2px solid #121215;
     background: #0303034D;
     backdrop-filter: blur(100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
 }
 
 header .wrapper {
-    width: 100%;
     padding: 0 60px;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
-}
-.logo{
-    display: flex;
-    gap:25px;
     align-items: center;
 }
+
+.logo {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
 .logo img {
     height: 50px;
     width: auto;
@@ -60,12 +75,243 @@ header .container {
     line-height: 155%;
     max-width: 179px;
 }
-.navigate{
+
+.navigate {
     display: flex;
-    gap:70px;
+    gap: 70px;
+    align-items: center;
 }
 
-.navigate svg{
-    fill:white;
+.navigate svg {
+    fill: white;
     opacity: 30%;
+}
+
+.main_menu {
+    display: flex;
+}
+
+.main_menu li {
+    padding: 37px 30px 38px 30px;
+}
+
+.main_menu a {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.btn_popup {
+    margin: 20px 0;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 83%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: white;
+    padding: 23px 41px;
+    border-radius: 10px;
+    border: 1px solid rgba(37, 42, 59, 1);
+    background: #171A28;
+}
+
+.first_screen {
+    background: #030303;
+    height: 1007px;
+    background-image: url(./assets/image/bg_image_first.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.first_screen__decorate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main_menu .active {
+    background: linear-gradient(180deg, rgba(20, 100, 219, 0) 0%, rgba(20, 100, 219, 0.15) 100%);
+}
+
+.main_menu li {
+    position: relative;
+}
+
+.main_menu li:after {
+    content: " ";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    border-radius: 15px 15px 0 0;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateY(4px);
+}
+
+.main_menu .active a {
+    color: white;
+}
+
+.main_menu a:hover {
+    color: white;
+}
+
+.main_menu li:has(a:hover) {
+    background: linear-gradient(180deg, rgba(20, 100, 219, 0) 0%, rgba(20, 100, 219, 0.15) 100%);
+}
+
+.main_menu li:has(a:hover)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    border-radius: 15px 15px 0 0;
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(0);
+}
+
+/*First-screen*/
+.first_screen .wrapper {
+    z-index: 2;
+    position: relative;
+    max-width: 1575px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.first_screen {
+    padding-top: 190px;
+}
+
+h2 {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+h2 span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.top_container {
+    display: grid;
+    grid-template-columns: 843px auto;
+}
+
+.first_screen__list {
+    padding-top: 39px;
+    padding-left: 3px;
+    padding-bottom: 50px;
+}
+
+.first_screen__list li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.first_screen__list li span {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 175%;
+}
+
+.first_screen__list img {
+    width: 13px;
+    height: 15px;
+}
+
+.first_screen_actionbox {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.first_screen_mainbtn {
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    box-shadow: 0px -13px 25px 15px rgba(255, 255, 255, 0.13) inset;
+    border-radius: 13px;
+    height: 90px;
+    width: 340px;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.4px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.first_screen_socbox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.first_screen_tg {
+    background: linear-gradient(45deg, rgba(11, 133, 207, 0.8) 0%, rgba(39, 159, 232, 0.8) 100%),
+        linear-gradient(0deg, rgba(34, 158, 217, 0.2), rgba(34, 158, 217, 0.2));
+    backdrop-filter: blur(85.23829650878906px);
+    box-shadow: 0px -13px 25px 15px rgba(255, 255, 255, 0.05) inset;
+    width: 76px;
+    height: 76px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_screenvk {
+    width: 76px;
+    height: 76px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(36, 45, 103, 0.8) 0%, rgba(44, 56, 133, 0.8) 100%),
+        linear-gradient(0deg, rgba(34, 158, 217, 0.2), rgba(34, 158, 217, 0.2));
+    backdrop-filter: blur(85.23829650878906px);
+    box-shadow: 0px -13px 25px 15px rgba(255, 255, 255, 0.05) inset;
+}
+
+.first_screen_socbox p {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color:white;
+    background: linear-gradient(to right, #bfbfbf, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 133px;
 }
