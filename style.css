@@ -185,7 +185,7 @@ header .container {
 
 /*First-screen*/
 .first_screen .wrapper {
-    z-index: 2;
+    z-index: 3;
     position: relative;
     max-width: 1575px;
     margin: 0 auto;
@@ -198,11 +198,12 @@ header .container {
     max-width: 1575px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 4;
+    padding-bottom: 110px;
 }
 
 .first_screen {
     padding-top: 190px;
-    padding-bottom: 110px;
 }
 
 h2 {
@@ -439,33 +440,36 @@ h2 span {
     margin: 0 auto;
     padding: 0 20px;
     bottom: 0;
-    left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
+    width: fit-content;
 }
 
 .first_img_item {
     height: 947px;
     width: auto;
     justify-self: right;
-    padding-right: 323px;
     z-index: 2;
     position: absolute;
-     opacity: 0;
-         bottom: 0;
-     right: 0;
-     display: none;
-}
-.first_img_item.active{
-    display: block;
-    opacity: 1;
+    opacity: 0;
+    bottom: 0;
     
+    transition: opacity 0.21s ease-in-out;
+  pointer-events: none;
+}
+
+.first_img_item.active {
+    
+    opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+
 }
 
 .clip_path_decor {
     position: absolute;
-    bottom: 360px;
-    right: 500px;
+    bottom: 312px;
+    left: 11px;
     width: auto;
     z-index: 1;
     height: 468px;
@@ -485,6 +489,7 @@ h2 span {
     left: -64px;
     z-index: -2;
 }
+
 .first_decarate_text2 {
     font-family: Wix Madefor Display;
     font-weight: 400;
@@ -496,6 +501,6 @@ h2 span {
     opacity: 2%;
     position: absolute;
     top: -34px;
-    left:434px;
+    left: 434px;
     z-index: -2;
 }
