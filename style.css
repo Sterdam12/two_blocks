@@ -453,16 +453,16 @@ h2 span {
     position: absolute;
     opacity: 0;
     bottom: 0;
-    
+
     transition: opacity 0.21s ease-in-out;
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .first_img_item.active {
-    
+
     opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
+    pointer-events: auto;
+    z-index: 2;
 
 }
 
@@ -503,4 +503,1617 @@ h2 span {
     top: -34px;
     left: 434px;
     z-index: -2;
+}
+
+.first_screen_mainbtn.mobilid {
+    display: none;
+}
+
+.mobile_active {
+    display: none;
+}
+
+.first_screen_actionbtn.modilid {
+    display: none;
+}
+
+.soc_mobiled {
+    display: none;
+}
+
+.mobile_btn_menu span {
+    display: none;
+}
+
+/*two_screen*/
+.grid_screen {
+    padding: 100px 0;
+    background: #030303;
+    position: relative;
+}
+
+.two_screen_bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1480px;
+    z-index: 1;
+}
+
+.grid_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.grid_screen__title span {
+    font-weight: 700;
+}
+
+.grid_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 30px;
+}
+
+.grid_screen__img {
+    height: 73px;
+    width: auto;
+}
+
+.grid_screen__container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 70px;
+}
+
+.grid_screen__item {
+    border-radius: 15px;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    position: relative;
+
+    padding: 40px 40px 50px 50px;
+    z-index: 2;
+}
+
+.grid_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.grid_item__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 18px;
+}
+
+.grid_item__title span {
+    font-weight: 700;
+}
+
+.grid_item__disc {
+    font-family: "RF Dewi Extended";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0 25px 0;
+}
+
+.grid_screen__item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grid_screen__item ul li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    gap: 15px;
+}
+
+.grid_screen__item ul img {
+    width: 14px;
+    height: 14px;
+    padding-top: 8px;
+}
+
+.grid_item__number {
+    position: absolute;
+    font-family: "RF Dewi Extended";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 50%;
+    top: 40px;
+    right: 50px;
+}
+
+.grid_item__decorate1 {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    z-index: 1;
+}
+
+.grid_item_box {
+    position: relative;
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    border-radius: 15px;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+}
+
+.grid_screen__container2 {
+    display: grid;
+    grid-template-columns: 613px auto;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.grid_item__decorate2 {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    z-index: 1;
+}
+
+.grid_item__decorate3 {
+    position: absolute;
+    bottom: 30px;
+    right: -15px;
+    z-index: 1;
+}
+
+.grid_item2_box {
+    position: relative;
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    border-radius: 15px;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+}
+
+.grid_screen__container2 .grid_screen__item ul li {
+    max-width: 683px;
+}
+
+.grid_item2_box .grid_item__title {
+    max-width: 665px;
+}
+
+.grid_item2_box .grid_item__disc {
+    max-width: 737px;
+}
+
+/*two_screen*/
+/*tree_screen*/
+.left_screen {
+    padding-top: 40px;
+    background: url(/assets/image/tree_bg.png);
+    min-height: 1200px;
+    background-size: cover;
+    position: relative;
+}
+
+.left_screen::before {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.left_screen::after {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.left_screen .wrapper {
+    position: relative;
+    max-width: 1634px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.left_screen__container {
+    display: grid;
+    grid-template-columns: 723px auto;
+    gap: 94px;
+}
+
+.left_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 60px;
+
+}
+
+.left_screen__title span {
+    font-weight: 700;
+}
+
+.left_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 30px;
+}
+
+.accord_title {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.accord_title svg {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 23px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.left_screen__acordbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.accord_content ul {
+    list-style: disc;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.left_screen__acorditem {
+    border-bottom: 1px solid rgba(191, 191, 191, 0.1);
+    padding-bottom: 30px;
+}
+
+.accord_content ul li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 75%;
+}
+
+.accord_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.left_screen__acorditem.active .accord_content {
+    max-height: 500px;
+    /* Достаточно большое значение для контента */
+    padding: 0 20px 20px;
+}
+
+.left_screen__acorditem.active .accord_title svg {
+    transform: rotate(180deg);
+}
+
+.left_screen__left {
+    position: relative;
+    height: min-content;
+}
+
+
+.left_screen__decorate1 {
+    position: absolute;
+    top: 15px;
+    right: 42px;
+    z-index: 1;
+}
+
+.left_screen__mainimg {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+}
+
+.left_screen__decoratebox img {
+    height: 18px;
+    width: auto;
+}
+
+.left_screen__decorate1 .left_screen__decoratebox {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+    max-width: 253px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    position: absolute;
+    top: 40px;
+    right: 57px;
+    align-items: start;
+}
+
+.left_screen__decorate2 {
+    bottom: 30px;
+    left: 27px;
+    position: absolute;
+}
+
+.left_screen__decorate2 .left_screen__decoratebox {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+    max-width: 253px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    align-items: start;
+}
+
+/*tree_screen*/
+/*four_screen*/
+.slider_case {
+    padding-top: 110px;
+    background-color: #000000;
+    /* Чёрный фон */
+    background-image: url('./assets/image/four_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 66px;
+}
+
+.slider_case::before {
+    content: " ";
+    height: 220px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.slider_case::after {
+    content: " ";
+    height: 220px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.slider_case .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.slider_case__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+}
+
+.slider_case__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider_case__title span {
+    font-weight: 700;
+}
+
+.slider_case__navigate span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider_case__navigate {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 31px;
+}
+
+.slider_case__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 30px;
+}
+
+
+
+.my-swiper {
+    width: 100%;
+
+
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+}
+
+.my-swiper .swiper-slide {
+    width: 830px !important;
+    background: white;
+    position: relative;
+    background: linear-gradient(147.77deg, #1A1C24 0.07%, #141418 80.65%);
+    border-radius: 15px;
+    padding: 50px 50px 40px 50px;
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    height: auto;
+}
+
+.slider_case__decorateimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+}
+
+.slider_case_logo {
+    height: 23px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.slider_case_name {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 385px;
+}
+
+.slider_case_name span {
+    font-weight: 700;
+}
+
+.slider_case__text {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0;
+    max-width: 347px;
+}
+
+.my-swiper ul {
+    list-style: disc;
+    padding-left: 20px;
+    max-width: 412px;
+    opacity: 75%;
+}
+
+.my-swiper li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Ваши кастомные стили для навигации */
+.custom-nav {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+
+}
+
+.custom-prev,
+.custom-next {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 13px;
+    cursor: pointer;
+    color: white;
+    justify-items: center;
+
+    /* Основной фон */
+    background: rgba(23, 26, 40, 1);
+
+    /* Градиентная рамка */
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Псевдоэлемент для градиентной рамки */
+.custom-prev::before,
+.custom-next::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(94.01deg, #252A3B 0%, #252A3B 100%);
+    border-radius: 13px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+/* Основной фон поверх градиента */
+.custom-prev::after,
+.custom-next::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #171A28;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev:hover::after,
+.custom-next:hover::after {
+    background: linear-gradient(0deg, rgba(22, 173, 236, 1), rgba(20, 100, 219, 1));
+}
+
+.slider_case_bgdecor {
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+/*four_screen*/
+/*five_screen*/
+.five_screen {
+    padding: 134px 0 104px 0;
+    position: relative;
+    background: url(./assets/image/five_bg.png);
+    background-size: cover;
+}
+
+.five_screen::before {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.five_screen::after {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.five_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.five_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.five_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.five_screen__title span {
+    font-weight: 700;
+}
+
+.five_screen__container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.five_screen__item {
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    /* Делаем flex-контейнером */
+    flex-direction: column;
+}
+
+.five_screen__decorate {
+    position: absolute;
+    top: -15px;
+    right: 60px;
+    width: auto;
+    height: 139px;
+    z-index: 1;
+}
+
+.five_screen__box {
+    z-index: 2;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    position: relative;
+    padding: 35px 30px 50px 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Занимает всю высоту родителя (.five_screen__item) */
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.five_screen__logo {
+    height: 84px;
+    width: auto;
+}
+
+.five_screen__ititle {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0 30px 0;
+}
+
+.five_screen__ititle span {
+    font-weight: 700;
+}
+
+.five_screen__box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.five_screen__box ul li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 0.75), rgba(255, 255, 255, 0.75));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    gap: 10px;
+}
+
+.five_screen__box ul img {
+    height: 13px;
+    width: 11px;
+    padding-top: 7px;
+}
+
+.five_screen__price {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.five_screen__value {
+    font-weight: 700;
+    font-size: 36px;
+    padding: 0 10px;
+}
+
+.five_screen__unit {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.five_screen__box a {
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    color: rgba(255, 255, 255, 1);
+    height: 90px;
+    display: flex;
+    max-width: 375px;
+    width: 100%;
+    border-radius: 13px;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0.6px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.five_screen__number {
+    font-family: RF Dewi Extended;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 145%;
+    opacity: 20%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+.blue .five_screen__box {
+    gap: 30px;
+}
+
+.blue .five_screen__box {
+    background: linear-gradient(90deg, #16ADEC, #1464DB);
+}
+
+.blue .five_screen__box ul li {
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.blue .five_screen__box a {
+    box-shadow: 0px -13px 25px 15px rgba(255, 255, 255, 0.13) inset;
+    color: rgba(6, 6, 21, 1);
+    background: linear-gradient(94.01deg, #E7F0F6 0%, #C3CED6 100%);
+}
+
+.blue .five_screen__ititle {
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.blue .five_screen__price {
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.five_screen__container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.five_screen__container2 .five_screen__item:first-child .five_screen__decorate {
+    top: 0px;
+    left: -15px;
+    width: 140px;
+    height: auto;
+}
+
+.five_screen__container2 .five_screen__item:last-child .five_screen__decorate {
+    bottom: 116px;
+    right: -15px;
+    width: 140px;
+    height: auto;
+    top: auto;
+}
+
+/*five_screen*/
+/*Form_screen*/
+#form_phone {
+    position: relative;
+    color: white;
+    background: #333;
+    /* Для демонстрации */
+    padding: 8px;
+    border: 1px solid #555;
+}
+
+.form_screen {
+    padding-top: 16px;
+    background-color: #030303;
+    padding-bottom: 22px;
+}
+
+.form_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_screen__title span {
+    font-weight: 700;
+}
+
+.form_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px 0;
+}
+
+.form_screen ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 73px;
+}
+
+.form_screen ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form_screen li div {
+    display: contents;
+}
+
+.form_screen li span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.form_screen__container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.form_screen__container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#form_name {
+    background: rgba(16, 16, 16, 1);
+    background-image: url(./assets/image/bg_input1.png);
+    border: 1px solid rgba(153, 153, 153, 0.05);
+    color: rgba(255, 255, 255, 1);
+    font-family: Wix Madefor Display;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 2%;
+    height: 90px;
+    padding: 0 68px 0 78px;
+    border-radius: 13px;
+    outline: none;
+    background-size: 20px 24px;
+    background-repeat: no-repeat;
+    background-position: 33px center;
+    box-sizing: border-box;
+    width: 320px;
+}
+
+#form_name::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+#form_phone {
+    background: rgba(16, 16, 16, 1);
+    background-image: url(./assets/image/bg_input1.png);
+    border: 1px solid rgba(153, 153, 153, 0.05);
+    color: rgba(255, 255, 255, 1);
+    font-family: Wix Madefor Display;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    height: 90px;
+    padding: 0 0 0 78px;
+    border-radius: 13px;
+    outline: none;
+    background-size: 20px 24px;
+    background-repeat: no-repeat;
+    background-position: 33px center;
+    box-sizing: border-box;
+    width: 320px;
+}
+
+#form_phone::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.form_screen__container button {
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    box-sizing: border-box;
+    box-shadow: 0px -13px 25px 15px rgba(255, 255, 255, 0.13) inset;
+    color: white;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0.4px;
+    border-radius: 13px;
+    height: 90px;
+    padding: 0 102px;
+
+}
+
+.check_accept {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accept {
+    display: flex;
+    gap: 15px;
+}
+
+.accept {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accept a {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 145%;
+    border-bottom: 1px solid white;
+}
+
+.accept input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.accept input[type="checkbox"]:checked {
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    border-color: transparent;
+}
+
+.accept input[type="checkbox"]:checked::before {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.accept label {
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+
+/*Form_screen*/
+/*animate_screen*/
+.animate_screen {
+    padding-top: 178px;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url(./assets/image/animatein_screen_bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.animate_screen::before {
+    content: " ";
+    height: 523px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.animate_screen::after {
+    content: " ";
+    height: 368px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.animate_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.animate_screen__container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.animate_screen__right {
+    padding-right: 107px;
+}
+
+.animate_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.animate_screen__title span {
+    font-weight: 700;
+}
+
+.animate_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px 0 135px 0;
+}
+
+.animate_screen__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+}
+
+.animate_screen__item {
+    position: relative;
+}
+
+.animate_screen__box {
+    border-radius: 15px;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    padding: 55px 48px 51px 55px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.animate_screen__text {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 30px;
+}
+
+.animate_screen__text span {
+    font-weight: 700;
+}
+
+.animate_screen__srok {
+    padding-top: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.animate_screen__srok img {
+    width: 28px;
+    height: 28px;
+}
+
+.animate_screen__srok p {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animate_screen__srok span {
+    font-weight: 700;
+}
+
+.animate_screen__decorate {
+    position: absolute;
+    top: -67px;
+    left: 30px;
+    z-index: 1;
+}
+
+.animate_screen__name {
+    top: 15px;
+    left: 25px;
+    position: absolute;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 175%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.animate_screen__decorate span {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 175%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: -18px;
+    right: 69px;
+}
+
+/*animate_screen*/
+@media screen and (max-width:480px) {
+    .top_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .first_screen_socbox {
+        display: none;
+    }
+
+    .bottom_container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 0;
+    }
+
+    .first_img_action {
+        padding: 0;
+        width: 100%;
+    }
+
+    .first_decarate_text {
+        display: none;
+    }
+
+    .first_decarate_text2 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h2 span {
+        font-size: 28px;
+    }
+
+    .btn_popup {
+        display: none;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .logo img {
+        height: 33px;
+    }
+
+    header .wrapper {
+        padding: 23px 40px;
+    }
+
+    .first_screen {
+        padding-top: 125px;
+        background-image: url("./assets/image/mob_bg.png");
+    }
+
+    .first_screen .wrapper {
+        padding: 0 54px;
+    }
+
+    .first_screen__list {
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 0;
+        gap: 10px;
+        padding-bottom: 45px;
+    }
+
+    .first_screen__list li {
+        font-size: 15px;
+        gap: 10px;
+        align-items: normal;
+    }
+
+    .first_screen__list li span {
+        font-size: 15px;
+    }
+
+    .first_screen__list img {
+        width: 11px;
+        height: 13px;
+        padding-top: 5px;
+    }
+
+    .first_screen_mainbtn {
+        border-radius: 10px;
+        height: 80px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .first_screen .wrapper2 {
+        padding: 0 54px;
+        padding-bottom: 70px;
+    }
+
+    .first_screen_actionbtn {
+        gap: 20px;
+        padding-top: 0;
+        max-width: 50%;
+        padding-bottom: 455px;
+    }
+
+    .top_container .first_screen_actionline:nth-child(1) {
+        order: 3;
+    }
+
+    .top_container .first_screen_actionline:nth-child(2) {
+        order: 5;
+    }
+
+    .top_container .first_screen_actionline:nth-child(3) {
+        order: 6;
+    }
+
+    .top_container .first_screen_actionline:nth-child(4) {
+        order: 4;
+    }
+
+    .top_container .first_screen_actionline:nth-child(5) {
+        order: 1;
+    }
+
+    .top_container .first_screen_actionline:nth-child(6) {
+        order: 2;
+    }
+
+    .first_screen_actionline {
+        gap: 10px;
+        font-size: 15px;
+        flex-direction: row-reverse;
+    }
+
+    .first_screen_actionbox {
+        display: none;
+    }
+
+    .bottom_container__title {
+        font-size: 36px;
+    }
+
+    .bottom_container__item span {
+        font-size: 18px;
+        padding: 15px 0 10px 0;
+    }
+
+    .bottom_container__item p {
+        font-size: 15px;
+    }
+
+    .bottom_container__item.coll1 p {
+        max-width: 303px;
+    }
+
+    .bottom_container__item.coll2 p {
+        max-width: 320px;
+    }
+
+    .bottom_container__item.coll3 p {
+        max-width: 294px;
+    }
+
+    .first_screen_mainbtn.mobilid {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .first_screen__decorate {
+        display: none;
+    }
+
+    .wrapper2 {
+        display: none;
+    }
+
+    .mobile_active {
+        background: linear-gradient(to bottom, transparent 0%, transparent 100px, #030303 190px, #030303 100%);
+        margin-top: -195px;
+        z-index: 5;
+        position: relative;
+        display: block;
+    }
+
+    .clip_path_decor {
+        display: none;
+    }
+
+    .mobile_active .wrapper2 {
+        display: block;
+        padding: 0 54px;
+        padding-bottom: 70px;
+        position: relative;
+        max-width: 1575px;
+        margin: 0 auto;
+    }
+
+    .first_img_item {
+        height: auto;
+        width: 347px;
+        left: 60px;
+    }
+
+    .first_screen_actionbtn.modilid .first_screen_actionline:before {
+        content: none;
+    }
+
+    .first_screen_actionbtn.modilid {
+        display: flex;
+        position: absolute;
+        left: 54px;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .first_screen_actionbtn.modilid .first_screen_actionline {
+        gap: 10px;
+        font-size: 15px;
+        flex-direction: column;
+        display: block;
+        text-align: left;
+    }
+
+    .first_screen_gradient {
+        display: none;
+    }
+
+    .soc_mobiled {
+        display: flex;
+        gap: 10px;
+    }
+
+    .soc_mobiled img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mobile_btn_menu span {
+        color: white;
+        font-family: Wix Madefor Display;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 155%;
+        display: block;
+        background: linear-gradient(to right, #BFBFBF, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mobile_btn_menu {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .navigate {
+        gap: 30px;
+    }
 }
