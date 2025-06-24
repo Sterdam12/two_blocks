@@ -1689,12 +1689,66 @@ h2 span {
 
 /*Form_screen*/
 /*animate_screen*/
+
+
 .animate_screen {
-    padding-top: 178px;
+    padding-top: 103px;
     background-color: rgba(0, 0, 0, 1);
     background-image: url(./assets/image/animatein_screen_bg.png);
     background-size: cover;
+        position: relative;
+}
+
+.animate_screen .wrapper.anim {
     position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1;
+    margin-top: -1000px;
+}
+
+.animate_screen.scroll:before {
+    display: none;
+}
+
+.animata_bg_overflove {
+    background: linear-gradient(
+      to bottom, 
+      #000000, 
+      #000000 calc(100% - 20px), 
+      transparent
+    );
+    width: 100%;
+    height: 321px;
+    top: 0;
+    left: -1px;
+    position: absolute;
+    z-index: -1;
+}
+
+.animate_screen.scroll:after {
+    display: none;
+}
+
+.animate_screen__right {
+    padding-right: 107px;
+    padding-top: 75px;
+    position: relative;
+}
+
+.animate_screen__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.text {
+    height: 1000px;
 }
 
 .animate_screen::before {
@@ -1704,7 +1758,7 @@ h2 span {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
 }
 
 .animate_screen::after {
@@ -1722,17 +1776,17 @@ h2 span {
     max-width: 1590px;
     margin: 0 auto;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .animate_screen__container {
     display: grid;
     gap: 40px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 720px;
 }
 
-.animate_screen__right {
-    padding-right: 107px;
-}
 
 .animate_screen__title {
     font-family: Wix Madefor Display;
@@ -1758,18 +1812,31 @@ h2 span {
     background: linear-gradient(to right, #BFBFBF, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 30px 0 135px 0;
+    padding: 30px 0 10px 0;
 }
 
-.animate_screen__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 115px;
-}
+
 
 .animate_screen__item {
     position: relative;
 }
+
+
+.animate_screen__item.overlap {
+    transform: translateY(-60px);
+    /* регулируем степень наплыва */
+    z-index: 2;
+}
+
+.animate_screen__decorate_bg {
+       position: absolute;
+    bottom: 0;
+    left: 61px;
+    height: 936px;
+    width: auto;
+    z-index: 1;
+}
+
 
 .animate_screen__box {
     border-radius: 15px;
@@ -1852,7 +1919,1168 @@ h2 span {
     right: 69px;
 }
 
-/*animate_screen*/
+.animate_screen__bottomtitle {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28.5px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 729px;
+    margin: 0 auto;
+}
+
+.animate_screen__bottombox {
+    z-index: 2;
+    position: relative;
+}
+
+.animate_screen__bottomtitle span {
+    font-weight: 700;
+}
+
+.animate_screen__bottomcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    padding-top: 44px;
+}
+
+.animate_screen__bottomitem img {
+    width: 66px;
+    height: 67px;
+}
+
+.animate_screen__bottomitem p {
+    padding-top: 5px;
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+
+.animate_screen__bottomitem span {
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animate_screen__bottomitem {
+    justify-items: center;
+}
+
+.animate_screen__decoratetext1 {
+    position: absolute;
+    top: 380px;
+    left: -94px;
+}
+
+.animate_screen__decoratetext2 {
+    position: absolute;
+    top: 0;
+    left: 637px;
+}
+
+.animate_screen__left {
+    position: relative;
+    height: 1326px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.animate_screen__lefticon {
+    width: 32px;
+    height: 32px;
+}
+
+
+/*slider_steps*/
+.slider_steps {
+    padding: 200px 0 96px 0;
+    background-color: #000000;
+    background-image: url(./assets/image/four_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_steps::after {
+    content: " ";
+    height: 523px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.slider_steps .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.slider_steps .slider_case__disc {
+    max-width: 698px;
+}
+
+.slider_steps .slider_case__navigate {
+    padding-top: 70px;
+}
+
+.custom-prev2,
+.custom-next2 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 13px;
+    cursor: pointer;
+    color: white;
+    justify-items: center;
+    background: rgba(23, 26, 40, 1);
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.my-swiper2 {
+    width: 100%;
+}
+
+.my-swiper2 .swiper-slide {
+    width: 398px !important;
+    background: white;
+    position: relative;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border-radius: 15px;
+    padding: 50px 50px 50px 50px;
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    height: auto;
+}
+
+.custom-prev2::before,
+.custom-next2::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(94.01deg, #252A3B 0%, #252A3B 100%);
+    border-radius: 13px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev2::after,
+.custom-next2::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #171A28;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev2:hover::after,
+.custom-next2:hover::after {
+    background: linear-gradient(0deg, rgba(22, 173, 236, 1), rgba(20, 100, 219, 1));
+}
+
+.slider_steps__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 89px;
+}
+
+.slider_steps_bgdecor {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+}
+
+.slider_steps_name {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 330px;
+}
+
+.slider_steps_name span {
+    font-weight: 700;
+}
+
+.my-swiper2 ul {
+    list-style: disc;
+    max-width: 412px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.my-swiper2 ul span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-swiper2 li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    gap: 15px;
+}
+
+.my-swiper2 li img {
+    width: 14px;
+    height: 14px;
+    padding-top: 8px;
+}
+
+.slider_steps_number {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-family: RF Dewi Extended;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 50%;
+}
+
+/*slider_steps*/
+
+/*team_screen*/
+.team_screen {
+    padding: 196px 0 200px 0;
+    position: relative;
+    background: url(./assets/image/five_bg.png);
+    background-size: cover;
+}
+
+.team_screen::before {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.team_screen::after {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.team_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.team_screen__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+.team_screen__title span {
+    font-weight: 700;
+}
+
+.team_screen__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+
+.team_screen__container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-auto-rows: 1fr;
+}
+
+.team_screen__item {
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team_screen__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 21px;
+    align-items: center;
+}
+
+.team_screen__top img {
+    width: 67px;
+    height: 24px;
+}
+
+.team_screen__top span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 145%;
+    opacity: 30%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team_item__bg {
+    position: absolute;
+    top: 0;
+    right: 98px;
+}
+
+.team_screen__person {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.team_screen__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.team_screen__name {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 29px;
+    padding-left: 20px;
+}
+
+.team_screen__tag {
+    font-family: RF Dewi Extended;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 30%;
+    padding-bottom: 20px;
+    max-width: 375px;
+    width: 100%;
+    justify-self: right;
+}
+
+.team_screen__info {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 375px;
+    width: 100%;
+    justify-self: right;
+}
+
+.team_screen__box {
+    position: relative;
+    z-index: 3;
+    padding-top: 51px;
+    padding-right: 40px;
+    max-width: 506px;
+    justify-self: right;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.team_screen__text {
+    position: absolute;
+    left: 56px;
+    top: 165px;
+    width: 51px;
+    height: auto;
+}
+
+.team_screen__container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px;
+    padding-top: 30px;
+}
+
+.team_screen__item2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    padding: 49px 17px 34px 25px;
+}
+
+.team_screen__top2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_screen__top2 img {
+    height: 20px;
+    width: 56px;
+}
+
+.team_screen__top2 span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 145%;
+    opacity: 30%;
+    padding-top: 6px;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team_screen__box2 {
+    padding-top: 32px;
+    position: relative;
+    max-width: 271px;
+    justify-self: right;
+    padding-right: 23px;
+}
+
+.team_screen__name2 {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 27px;
+}
+
+.team_screen__tag2 {
+    font-family: RF Dewi Extended;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    max-width: 160px;
+}
+
+.team_screen__info2 {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 60px;
+}
+
+.team_screen__text2 {
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+
+.team_item__bg2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.team_screen__bg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.team_screen__person2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/*team_screen*/
+
+/*slider_test*/
+.slider_test {
+    padding-top: 25px;
+    background-color: #000000;
+    background-image: url(./assets/image/four_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_test::before {
+    content: " ";
+    height: 309px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.slider_test::after {
+    content: " ";
+    height: 240px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.slider_test .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.slider_test__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 66px;
+    align-items: flex-end;
+}
+
+.slider_test__title {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, #BFBFBF, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider_test__title span {
+    font-weight: 700;
+}
+
+.slider_test__disc {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 9px;
+}
+
+.slider_test__navigate {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.slider_test__navigate span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 175%;
+    text-align: right;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-prev3,
+.custom-next3 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 13px;
+    cursor: pointer;
+    color: white;
+    justify-items: center;
+    background: rgba(23, 26, 40, 1);
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev3::before,
+.custom-next3::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(94.01deg, #252A3B 0%, #252A3B 100%);
+    border-radius: 13px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev3::after,
+.custom-next3::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #171A28;
+    border-radius: 12px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-prev3:hover::after,
+.custom-next3:hover::after {
+    background: linear-gradient(0deg, rgba(22, 173, 236, 1), rgba(20, 100, 219, 1));
+}
+
+.my-swiper3 .swiper-slide {
+    width: 627px !important;
+    background: white;
+    position: relative;
+    background: linear-gradient(147.77deg, #101116 0.07%, #0D0D10 80.65%);
+    border-radius: 15px;
+    padding: 40px 50px 50px 50px;
+    border: 2px solid rgba(153, 153, 153, 0.05);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: space-between;
+}
+
+.slider_test_bgdecor {
+    position: absolute;
+    top: -15px;
+    left: 47px;
+}
+
+.slider_test_head {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.slider_test_head p {
+    font-family: RF Dewi Extended;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 450px;
+}
+
+.slider_test_head img {
+    height: 78px;
+    width: auto;
+}
+
+.my-swiper3 ul {
+    list-style: disc;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 596px;
+}
+
+.my-swiper3 li {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    gap: 15px;
+}
+
+.my-swiper3 li img {
+    width: 14px;
+    height: 14px;
+    padding-top: 8px;
+}
+
+.slider_test_name {
+    padding: 28px 0 25px 0;
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 571px;
+}
+
+.slider_test_name span {
+    font-weight: 700;
+}
+
+.slider_test__bottom {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    grid-template-columns: auto 301px;
+}
+
+.slider_test__bottom a {
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    box-shadow: 0px -12.19px 23.44px 14.06px rgba(255, 255, 255, 0.13) inset;
+    color: white;
+    border-radius: 12px;
+    height: 90px;
+    display: flex;
+    width: 300px;
+    padding: 10px 51px;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider_test__price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider_test__pricetitle {
+    font-family: RF Dewi Extended;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 124%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 60%;
+}
+
+.slider_test__number {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 135%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider_test__number span {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+/*slider_test*/
+
+/*faq*/
+.faq_screen {
+    padding: 200px 0 0px 0;
+    position: relative;
+    background: url(./assets/image/five_bg.png);
+    background-size: cover;
+    min-height: 686px;
+}
+
+.faq_screen::before {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.faq_screen::after {
+    content: " ";
+    height: 384px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0) 0%, #030303 100%);
+}
+
+.faq_screen .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.faq_screen__title {
+    height: 43px;
+    width: auto;
+}
+
+.faq_screen__container {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.faq_screen__box p {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 75%;
+}
+
+.left_screen__acorditem.active .accord_content {
+    max-height: 500px;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.faq_screen__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq_screen .accord_title {
+    padding-right: 58px;
+}
+
+/*footer*/
+footer {
+    background: rgba(10, 10, 10, 1);
+    padding: 80px 0 80px 0;
+}
+
+footer .wrapper {
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer_container__top {
+    display: grid;
+    grid-template-columns: auto 640px auto;
+    gap: 68px;
+}
+
+.footer_logo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 38px;
+}
+
+.footer_logo img {
+    height: 50px;
+    width: auto;
+}
+
+.footer_info {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 16px;
+}
+
+.coll2 img {
+    height: 12px;
+    width: 18px;
+}
+
+.coll2 ul {
+    display: flex;
+    gap: 40px;
+    row-gap: 9px;
+    padding-top: 38px;
+    flex-wrap: wrap;
+    max-width: 450px;
+}
+
+.coll2 ul a {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.coll2 ul a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.coll2 ul li {
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.coll2 ul li:after {
+    content: " ";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    border-radius: 15px 15px 0 0;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateY(4px);
+}
+
+.coll2 li:has(a:hover)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(94.01deg, #16ADEC 0%, #1464DB 100%);
+    border-radius: 15px 15px 0 0;
+    opacity: 1;
+    bottom: 0;
+    transform: translateY(0);
+}
+
+.footer_title {
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 145%;
+    color: white;
+    background: linear-gradient(to right, rgba(191, 191, 191, 1), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer_btn {
+    padding-top: 38px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer_mainbtn {
+    margin-right: 8px;
+    background: rgba(23, 26, 40, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(37, 42, 59, 1);
+    height: 60px;
+    width: 200px;
+    font-family: Wix Madefor Display;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 10px;
+    align-content: center;
+}
+
+.footer_soc img {
+    width: 60px;
+    height: 60px;
+}
+
+footer .coll1 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+footer .coll2 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+footer .coll3 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+footer .coll_bottom {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.coll_bottom a {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.coll_bottom span {
+    font-family: Wix Madefor Display;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+}
+.scrolltotop1{
+    position: absolute;
+    top: -337px;
+    left: 75px;
+    z-index: 2;
+}
+.scrolltotop2{
+    position: absolute;
+    top: -337px;
+    right: 75px;
+    z-index: 2;
+}
+.scrolltotop3{
+    position: absolute;
+        top: -149px;
+    right: 75px;
+    z-index: 2;
+}
+.scrolltotop4{
+        position: absolute;
+    top: -57px;
+    left: 75px;
+    z-index: 2;
+}
 @media screen and (max-width:480px) {
     .top_container {
         grid-template-columns: 1fr;
