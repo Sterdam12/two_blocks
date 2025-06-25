@@ -61,6 +61,26 @@ document.addEventListener("DOMContentLoaded", function () {
     autoHeight: false, // Отключаем авто-высоту Swiper
     observer: true, // Наблюдаем за изменениями контента
     observeParents: true,
+
+    // Адаптация для разных экранов
+    breakpoints: {
+      // when window width is >= 320px (мобильные)
+      320: {
+        slidesPerView: 1,
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 768px (планшеты)
+      768: {
+        slidesPerView: "1",
+        spaceBetween: 20
+      },
+      // when window width is >= 1024px (десктопы)
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 30
+      }
+    }
   });
 });
 function equalizeHeights() {
@@ -105,6 +125,22 @@ document.addEventListener("DOMContentLoaded", function () {
     autoHeight: false, // Отключаем авто-высоту Swiper
     observer: true, // Наблюдаем за изменениями контента
     observeParents: true,
+    breakpoints: {
+      // when window width is >= 320px (мобильные)
+      320: {
+        spaceBetween: 15
+      },
+      // when window width is >= 768px (планшеты)
+      768: {
+        slidesPerView: "1",
+        spaceBetween: 20
+      },
+      // when window width is >= 1024px (десктопы)
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 30
+      }
+    }
   });
 });
 function equalizeHeights() {
