@@ -55,6 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".custom-prev",
     },
 
+    // Пагинация (добавьте этот блок)
+    pagination: {
+      el: '.custom-pagination', // элемент для пагинации
+      type: 'bullets', // тип пагинации (bullets, fraction, progressbar)
+      clickable: true, // возможность кликать на точки для перехода к слайду
+      dynamicBullets: false, // динамические точки (меняют размер при активном слайде)
+    },
+
     // Дополнительные параметры по желанию:
     slidesPerView: "auto",
     spaceBetween: 30,
